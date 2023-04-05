@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.container-fluid {
+  height: calc(100vh - 135px);
+}
