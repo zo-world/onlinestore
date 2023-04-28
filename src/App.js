@@ -4,18 +4,29 @@ import NavBar from './components/navbar';
 import Catalog from './pages/catalog';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-// import QuantityPicker from './components/quantityPicker';
+import About from "./pages/about";
+import Home from "./pages/home";
+import Admin from "./pages/admin";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <NavBar/>
-      
-      <div className='container-fluid'>
-      <Catalog/>
+      <BrowserRouter>
+        <NavBar />
+
+        <div className="container-fluid">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/catalog" element={<Catalog />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/admin" element={<Admin />} />
+          </Routes>
         </div>
-      
-      <Footer/>
+
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
