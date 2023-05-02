@@ -1,14 +1,12 @@
 .footer {
-  border-top: 1px solid #868687;
-  background-color: #e7e7e8;
-  padding: 10px 10px 20px 10px;
+  background-color: rgb(173, 187, 187);
+    border-top: 1px solid #6a6a6a;
+    padding: 15px 10px 40px 10px;
   text-align: center;
 }
 
-.footer h6 {
+.footer label {
   text-align: center;
-  color: #333;
-  font-family: 'Segoe UI';
-  font-size: 18px;
-  margin: 0;
+  color: #4c5155;
+    text-decoration: underline;
 }

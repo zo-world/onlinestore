@@ -61,16 +61,22 @@ const Catalog = () => {
       <h2>Check our amazing catalog!</h2>
       <h5> We have {products.length} Products for you!!</h5>
 
-      {category.map(c => <button key = {c} onClick={() => filter(c)} className="btn btn-sm btn-primary btn-filter">{c}</button>)}
+      {category.map((c) => (
+        <button
+          key={c}
+          onClick={() => filter(c)}
+          className="btn btn-sm btn-outline-success btn-filter"
+        >
+          {c}
+        </button>
+      ))}
       <br />
 
-      {prodsToDisplay.map(p => <Product key={p._id} data={p}/>)}
-
-      
+      {prodsToDisplay.map((p) => (
+        <Product key={p._id} data={p} />
+      ))}
     </div>
-  )
-
-
+  );
 };
 
 export default Catalog;

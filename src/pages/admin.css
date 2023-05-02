@@ -20,6 +20,10 @@
 .admin #secCoupons {
   flex: auto;
   max-width: 300px;
+  border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #fafbfc;
+    margin-left: 30px;
 }
 
 .admin form {

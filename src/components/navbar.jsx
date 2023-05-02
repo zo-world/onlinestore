@@ -5,7 +5,7 @@ export { Link } from "react-router-dom";
 
 function NavBar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary navbar-dark">
       <div className="container">
         <Link className="navbar-brand" to="/">
           Alchemy
@@ -36,6 +36,11 @@ function NavBar() {
             <li className="nav-item">
               <Link className="nav-link" to="/admin">
                 Admin
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/shoppingList">
+                My Shopping List
               </Link>
             </li>
             <li className="nav-item">
